@@ -65,7 +65,7 @@ include pull.mk
 build: $(SRC_DIRS)
 	mkdir -p $(ROOT)/$(PKGROOT)
 	mkdir -p $(PKGROOT)
-	mount --bind $(ROOT)/$(PKGROOT)
+	mount --bind $(ROOT)/$(PKGROOT) $(PKGROOT)
 	( \
 	  cd $(SOURCE_DIR); \
 	  ./configure --prefix=$(PKGROOT); \
@@ -79,7 +79,7 @@ build: $(SRC_DIRS)
 install::
 	mkdir -p $(ROOT)/$(PKGROOT)
 	mkdir -p $(PKGROOT)
-	mount --bind $(ROOT)/$(PKGROOT)
+	mount --bind $(ROOT)/$(PKGROOT) $(PKGROOT)
 	( \
 	  cd $(SOURCE_DIR); \
 	  $(MAKE) install; \
