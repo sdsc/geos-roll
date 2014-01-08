@@ -14,7 +14,7 @@ All rights reserved. Rocks(r) v5.1 www.rocksclusters.org
 <changelog>
 </changelog>
 
-<package>geos-common</package>
+<package>geos</package>
 <package>geos-modules</package>
 
 </kickstart>
