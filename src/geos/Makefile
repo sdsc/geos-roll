@@ -94,4 +94,5 @@ install::
 
 clean::
 	rm -rf $(SOURCE_DIR)
+	-umount $(PKGROOT)
 
